@@ -11,13 +11,12 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @RequiredArgsConstructor
 public class Book {
-
     @Id
-
-    private Long id;
-    private String title;
-    private String author;
-    private String genre;
-    private int publicationyear;
+    private final Long id;
+    private final String title;
+    private final String author;
+    private final String genre;
+    private final int publicationyear;
+    private final Long magazine_id;
     private int amount;
 }
