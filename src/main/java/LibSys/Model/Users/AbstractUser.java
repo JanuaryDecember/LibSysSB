@@ -1,26 +1,22 @@
 package LibSys.Model.Users;
 
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@NoArgsConstructor
 public abstract class AbstractUser implements UsersInterface{
 
-    protected String Name, Surname, Username, Password;
-    protected int PhoneNumber, Age;
+    protected String Name;
+    protected String Surname;
+    protected int PhoneNumber;
+    protected int Age;
 
-    protected AbstractUser(String Name, String Surname, String Username, String Password, int PhoneNumber, int Age) {
+    protected AbstractUser(String Name, String Surname, int PhoneNumber, int Age) {
         this.Name = Name;
         this.Surname = Surname;
         this.PhoneNumber = PhoneNumber;
         this.Age = Age;
-        this.Username = Username;
-        this.Password = Password;
-    }
-
-    public boolean checkPassword(String Password){
-        return this.Password.equals(Password);
-    }
-
-    @Override
-    public String getUsername(){
-        return Username;
     }
 
     @Override

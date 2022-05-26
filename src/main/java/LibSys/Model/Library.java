@@ -15,5 +15,7 @@ public class Library {
 
     @Id
     private final Long id;
-
+    private final String magazine_id;
+    private final String name;
+    private final String street;
 }

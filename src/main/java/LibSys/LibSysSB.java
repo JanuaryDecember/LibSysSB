@@ -10,6 +10,5 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class LibSysSB {
     public static void main(String[] args){
         SpringApplication.run(LibSysSB.class, args);
-
     }
 }

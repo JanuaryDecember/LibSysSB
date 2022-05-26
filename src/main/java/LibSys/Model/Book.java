@@ -13,10 +13,10 @@ import javax.persistence.Id;
 public class Book {
     @Id
     private final Long id;
+    private final Long magazine_id;
     private final String title;
     private final String author;
     private final String genre;
     private final int publicationyear;
-    private final Long magazine_id;
     private int amount;
 }

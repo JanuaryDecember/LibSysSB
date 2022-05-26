@@ -10,8 +10,6 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 public class BookController {
-
-
     private final BooksService booksService;
 
     @GetMapping("/books")
