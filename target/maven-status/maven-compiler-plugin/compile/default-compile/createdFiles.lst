@@ -1,0 +1,5 @@
+LibSys\Model\Users\AbstractUser.class
+LibSys\Model\Book.class
+LibSys\Model\Users\Reader.class
+LibSys\Model\Users\Employee.class
+LibSys\Model\Users\UsersInterface.class
